@@ -23,6 +23,7 @@ header p{
     top: 30%;
     padding: 20px 40px;
     border-radius: 8px;
+    box-shadow: 2px 2px 5px #2773a5;
 }
 
 .sign-body p label{
