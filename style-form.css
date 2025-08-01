@@ -11,22 +11,27 @@
 .outer-box{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to top left, rgb(39, 220, 181), rgb(197, 241, 235));
+    background: linear-gradient(to top left, rgb(4, 6, 6), rgb(112, 150, 145));
 }
 
 header p{
+    color: white;
     font-size: 12px;
 }
 
 .inner-box{
-    background-color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     position: relative;
     margin: 0 auto;
     width: 400px;
     top: 30%;
     padding: 20px 40px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px #2773a5;
+    color: white;
 }
 
 .sign-body p label{
@@ -54,14 +59,25 @@ header p{
 
 .sign-body p input[type="submit"]:hover{
     background-color: rgb(3, 111, 123);
+    border: 2px solid rgb(5, 174, 192);
+}
+
+.sign-body p input[type="submit"]::after{
+    text-decoration: underline;
 }
 
 .footer{
     margin-top: 20px;
     text-align: center;
+    color: white;
 }
 
 .footer a{
-    color: rgb(1, 111, 111);
+    color: rgb(114, 149, 149);
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
 }
 
