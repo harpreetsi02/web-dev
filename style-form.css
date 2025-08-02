@@ -39,11 +39,16 @@ header p{
 .sign-body p label{
     display: block;
     margin-top: 13px;
+    font-size: 14px;
+}
+
+.sign-body p input[placeholder]{
+    font-size: 13px;
 }
 
 .sign-body p input{
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 2px solid black;
     font-size: 1rem;
     border-radius: 8px;
@@ -66,7 +71,8 @@ header p{
 .footer{
     margin-top: 20px;
     text-align: center;
-    color: white;
+    color: rgb(188, 188, 188);
+    font-size: 12px;
 }
 
 .footer a{
