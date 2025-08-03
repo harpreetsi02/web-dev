@@ -66,6 +66,7 @@ header p{
 
 .sign-body p input[type="submit"]:hover{
     background-color: rgb(3, 111, 123);
+    transform: scale(0.98);
 }
 
 .footer{
