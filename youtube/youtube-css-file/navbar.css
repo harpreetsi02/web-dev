@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #373636;
+  font-family: Arial, sans-serif;
+}
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.left, .center, .right{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    margin-left: 12px;
+}
+
+.icon{
+    height: 22px;
+    width: 22px;
+    margin: 0 10px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.center input{
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid rgb(62, 62, 62);
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    width: 300px;
+}
+
+.search-btn{
+    height: 36px;
+    width: 50px;
+    background-color: rgb(46, 46, 46);
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mic-btn{
+    margin-left: 10px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mic-btn:hover{
+    background-color: rgba(54, 54, 54, 0.8);
+}
+
+.profile{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.notification{
+    position: relative;
+}
+
+.create{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(29, 29, 29);
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.create:hover{
+    background-color: rgba(54, 54, 54, 0.8);
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    visibility: hidden;
+    width: 120px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
