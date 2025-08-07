@@ -69,7 +69,10 @@
  }
 
  /* Location Area */
-
+.main{
+    position: relative;
+    top: 100vh;
+}
 .location{
     margin-top: 50px;
     padding: 30px;
@@ -77,6 +80,9 @@
     justify-content: space-evenly;
     background-color: black;
     gap: 100px;
+    /* position: relative; */
+    /* top: 100vh; */
+    /* align-content: end; */
 }
 
 .address{
@@ -101,6 +107,7 @@
  .map iframe{
     width: 400px;
     height: 300px;
+    border-radius: 20px;
  }
 
 
