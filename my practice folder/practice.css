@@ -1,34 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    /* background-color: aquamarine; */
+body{
+    background-color: antiquewhite;
 }
 
-.navbar-item{
+.container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.left{
-    display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
-.center{
+.box ul{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    list-style: none;
+    gap: 100px;
 }
 
-.right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.box ul li{
+    width: 100px;
+    background-color: brown;
+    /* visibility: hidden; */
+}
+/* .box{
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+
+
+    transition: all 500ms ease 0s;
 }
 
-.icon{
-    height: 28px;
-}
+.box:hover{
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+} */
