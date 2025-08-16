@@ -1,35 +1,45 @@
 body{
     background-color: antiquewhite;
-}
-
-.container{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
-.box ul{
-    display: flex;
-    list-style: none;
-    gap: 100px;
-}
+.box{
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: red;
+    margin: 50px;
+    
 
-.box ul li{
-    width: 100px;
-    background-color: brown;
-    /* visibility: hidden; */
-}
-/* .box{
-    width: 80px;
-    height: 80px;
-    background-color: brown;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 
-
-    transition: all 500ms ease 0s;
+    
 }
 
 .box:hover{
-    width: 150px;
-    border-radius: 20px;
-    border: 2px solid black;
-} */
+    /* width: 200px; */
+    /* transform: rotate(180deg); */
+    /* border-radius: 20px; */
+    /* background-color: rgb(223, 142, 36); */
+
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+ 
+@keyframes example {
+    to{
+        width: 100px;
+        height: 50px;
+        color: blue;
+    }
+    from{
+        width: 50px;
+    }
+}

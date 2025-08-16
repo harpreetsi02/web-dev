@@ -24,9 +24,25 @@ body{
     color: white;
 }
 
-/* .nav-item{
-    background-color: white;
-} */
+
+/* media querie */
+@media screen and (max-width: 430px){
+    .navbar{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-item{
+        visibility: hidden;
+    }
+}
 
 .nav-item a{
     text-decoration: none;
