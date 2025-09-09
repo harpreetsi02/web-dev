@@ -83,7 +83,6 @@ body{
     margin-bottom: 30px;
     margin-top: 29px;
     font-size: 12px;
-    /* font */
 }
 
 .login-item{
@@ -154,6 +153,7 @@ footer{
 
 .footer-item a:hover{
     text-decoration: underline;
+    color: #adadad;
 }
 
 footer a{

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>JS Events Examples</title>
+    <style>
+        .box { 
+            width: 100px; 
+            height: 100px; 
+            background: red; 
+            margin: 10px;
+            display: inline-block; }
+        .active { 
+            border: 3px solid green; 
+            }
+    </style>
+</head>
+<body>
+    <button id="btn1">Click Me</button>
+    <button id="btn2">Click Me</button>
+    <button id="btn3">Click Me</button>
+
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+
+    <input type="text" id="input1" placeholder="Type something">
+    <input type="text" id="input2" placeholder="Focus/Blur Example">
+    <input type="text" id="input3" placeholder="Input Event">
+
+    <form id="form1">
+        <input type="text" placeholder="Form Input">
+        <button type="submit">Submit</button>
+    </form>
+
+    <select id="select1">
+        <option value="Option1">Option 1</option>
+        <option value="Option2">Option 2</option>
+    </select>
+    <input type="checkbox" id="check1"> Check me<br>
+    <div id="drag1" draggable="true" class="box">Drag me</div>
+    <div id="drop1" class="box">Drop here</div>
+    <div id="box4" class="box"></div>
+
+    <button id="triggerBtn">Trigger Custom Event</button>
+    <script src="/Dom-practice/events.js"></script>
+
+    <button onclick="displayDate()">The time is?</button>
+    <p id="demo"></p>
+
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+
+</body>
+</html>

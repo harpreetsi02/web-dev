@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fff2d4;
+}
+
+/* navbar section */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.navbar .left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .left .logo img{
+    width: 60px;
+    background-color: #fff;
+}
+
+.navbar .left .logoRight ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: white;
+}
+
+.navbar .right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar .right ul{
+    list-style: none;
+    color: #fff;
+
+}
+
+.navbar .right img{
+    width: 40px;
+    filter: invert(1);
+}
+
+/* hero section css */
+.hero{
+    height: 60vh;
+}
+
+/* footer section css */
+footer{
+    background-color: #140f23;
+    height: 50vh;
+}
+
+.container2{
+    padding: 100px 0;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 70px 0; */
+}
+
+.address h5{
+    color: #fff;
+}
+
+.address p{
+    color: #dfdfdf;
+    font-size: 14px;
+}
+
+.address .number,
+.address .email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.address .number p,
+.address .email p{
+    color: aqua;
+}
+
+.address .number img,
+.address .email img{
+    width: 30px;
+    filter: invert(1);
+}
+
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.details .lists{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details .lists h4{
+    color: #fff;
+    font: 16px;
+}
+
+.details .lists ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    list-style: none;
+    color: #bfbfbf;
+}
+
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+    color: #fff;
+}
+
+.copyright p{
+    font-size: 14px;
+}
+
+.copyright span{
+    color: aqua;
+}

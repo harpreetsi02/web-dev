@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asking Question</title>
+</head>
+<body>
+
+    <!-- asking question -->
+    <button onclick="document.body.classList.toggle('dark')">Dark Mode</button>
+
+    <!-- asking question -->
+    <button onclick="window.scrollTo(0,0)">Top</button>
+
+    <script>
+        // asking question
+        let li = document.createElement("li");
+        li.innerText = "b";
+        document.getElementById("list").appendChild("li");
+
+        // asking question
+        document.getElementById("btn").addEventListener("Click", () => {
+            document.getElementById("out").innerText = "Button Click";
+        });
+
+        // asking question
+        document.getElementById("class").classList.add("hightight");
+
+        // asking question
+        document.getElementById("toggle").onclick = function() {
+            this.classList.toggle("blue");
+        }
+
+        // asking question
+        function check(){
+            if(document.getElementById("f").value==""){
+                alert("Empty!"); 
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

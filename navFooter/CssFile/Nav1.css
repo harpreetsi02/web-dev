@@ -1,0 +1,139 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fffde8;
+}
+
+
+/* navbar section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.navbar .left img,
+.navbar .center img{
+    width: 35px;
+    margin: 5px;
+}
+
+.navbar .center img{
+    margin: 0 30px;
+}
+
+.navbar .right img{
+    width: 20px;
+    background-color: #cacaca;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 20px;
+}
+
+.navbar .left img{
+    background-color: #cacaca;
+    border-radius: 50%;
+}
+
+/* hero section */
+.hero{
+    height: 50vh;
+}
+
+/* footer section */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 60px;
+  height: auto;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-left .newsletter input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-left .socials{
+    display: flex;
+}
+
+.footer-left .socials h2{
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex: 2;
+  min-width: 400px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-ads {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.footer-ads p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer-ads a {
+  color: #fff;
+  text-decoration: underline;
+}

@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+/* <--------- First Navbar ----------> */
+
+.navbar1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background-color: white;
+    height: 10px;
+}
+
+.nav1-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav1-right .linkedin{
+    width: 30px;
+}
+
+.nav1-right .call{
+    width: 15px;
+}
+
+.nav1-right a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* <--------- Second Navbar ----------> */
+
+.navbar2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    background-color: white;
+    height: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-item ul{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item li{
+    list-style: none;
+    font-weight: bold;
+}
+
+.contact a{
+    text-decoration: none;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.spacer{
+    height: 300vh;
+}

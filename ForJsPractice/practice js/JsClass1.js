@@ -16,22 +16,22 @@
 
 
 
-// // Even or Odd
-// // let num = prompt("Enter a Number: ");
-// // if(num % 2 === 0){
-// //     console.log("This is Even number");
-// // }
-// // else{
-// //     console.log("This is Odd number");
-// // }
+// Even or Odd
+// let num = prompt("Enter a Number: ");
+// if(num % 2 === 0){
+//     console.log("This is Even number");
+// }
+// else{
+//     console.log("This is Odd number");
+// }
 
 
 
-// // Multiplication Table
-// // let n = 5;
-// // for (let i = 1; i <= 10; i++){
-// //     console.log(`${n} x ${i} = ${n * i}`);
-// // }
+// Multiplication Table
+// let n = 5;
+// for (let i = 1; i <= 10; i++){
+//     console.log(`${n} x ${i} = ${n * i}`);
+// }
 
 
 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+
+
+    <div id="container"></div>
+    <div id="text"></div>
+    <div class="text1"></div>
+    <div id="para">This is text</div>
+    <div id="hide">Hide this element</div>
+    <div id="visible" style="display: none;">Now visible</div>
+    <img src="/DaDa_project/images/nav-image.jpg" alt="image" width="50px" id="img">
+    <input type="text" id="input">
+    <p id="remove">remove me</p>
+    <div id="replace">old text</div>
+    <div id="class">class test</div>
+    <div id="toggle">click me</div>
+    <div id="html"></div>
+
+    <div id="btn">Click</div>
+    <div id="out"></div>
+    <div id="hover">hover me</div>
+
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'})">Smooth scroll</button>
+
+    <button onclick="document.body.style.backgroundColor='yellow'">change</button>
+
+    <form onsubmit="return check()">
+        <input id="f" required>
+        <button>Submit</button>
+    </form>
+
+    <ul id="list">
+        <li>a</li>
+    </ul>
+
+    <button onclick="document.body.style.backgroundColor = 'yellow'">change</button>
+
+    <input id="ph" type="text" placeholder="this is old">
+
+    <button id="b1" disabled>Click</button>
+
+    <input type="text" id="txt">
+    <p id="count"></p>
+
+    <p id="border">Border</p>
+
+    <p id="clone">Clone</p>
+    <div id="target">
+        <div id="tere">Clone1</div>
+    </div>
+
+    <ul id="u1">
+        <li>B</li>
+    </ul>
+
+    <ul id="count1">
+        <li>heelo</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <input type="text" id="blur">
+
+    <button id="b2">click</button>
+
+    <!-- asking question -->
+    <button 
+    onclick="document.body.style.background = '#'+Math.floor(Math.random()*16777215).toString(16)">random color</button>
+
+    <p id="time"></p>
+
+    <div id="tbl"></div>
+    <script>
+        // asking question
+        let table=document.createElement("table");
+        for(let i=0;i<3;i++){
+            let row=table.insertRow();
+            for(let j=0;j<3;j++){
+                let cell=row.insertCell();
+                cell.innerText=`${i},${j}`;
+            }
+        }
+        document.getElementById("tbl").appendChild(table);
+
+        // asking question
+        setInterval(()=>{document.getElementById("time").innerText = new
+        Date().toLocaleTimeString();},1000);
+
+        document.getElementById("blur").onfocus = function(){
+            this.style.background = "pink";
+        }
+
+        // alert(document.getElementById("count1").firstElementChild.innerText);
+        // alert(document.getElementById("count1").childElementCount);
+
+        let li = document.createElement("li");
+        li.innerText = "A";
+        document.getElementById("u1").insertBefore(li, document.getElementById("u1").firstChild);
+
+        document.getElementById("b2").innerText = "update"
+        
+        let c = document.getElementById("clone").cloneNode(true);
+        document.getElementById("target").appendChild(c);
+
+        document.getElementById("border").style.border = "2px solid blue";
+
+        // asking question
+        document.getElementById("txt").onclick = function(){
+            document.getElementById("count").innerText = this.value.length;
+        }
+
+        document.getElementById("b1").disabled = true;
+
+        document.getElementById("text").innerText = "hello world";
+        document.getElementById("body").style.background = "lightblue";
+        document.getElementById("para").style.fontSize = "30px";
+        document.getElementById("hide").style.display = "none";
+        document.getElementById("visible").style.display = "block";
+        document.getElementById("img").src = "/DaDa_project/images/call-logo.png";
+        document.getElementById("input").value = "Hello world!";
+        document.getElementById("para").innerText  += " hello";
+        document.getElementById("container").style.display = "flex";
+        
+        document.getElementById("container").style.justifyContent = "space-between";
+
+        let p = document.createElement("p");
+        p.innerText = "Hello buddy! ";
+        document.getElementById("container").appendChild(p);
+        // document.title="hello";
+        // document.body.style.backgroundColor="red";
+        document.getElementById("remove").remove();
+        document.getElementById("replace").innerText = "new text";
+
+        document.getElementById("html").innerHTML = "<h2> hello buddy </h2>";
+
+        // alert(document.getElementById("img").getAttribute("src"));
+
+        let el = document.getElementById("replace");
+        el.style.color = "red";
+        el.style.fontSize = "24px";
+        el.style.fontWeight = "bold";
+
+        document.getElementById("hover").onmouseover = function () {
+            this.style.color = "red";
+        }
+
+        document.getElementById("ph").placeholder="this is new";
+
+
+    </script>
+</body>
+</html>
