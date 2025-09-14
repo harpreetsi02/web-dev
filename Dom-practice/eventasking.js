@@ -33,3 +33,10 @@ document.getElementById("check1").addEventListener("change", function(){
 window.addEventListener("load", function(){
     console.log("page loaded");
 });
+
+// asking question
+// 24. Drag start
+document.getElementById("drag1").addEventListener("dragstart", function(){
+    console.log("drag started");
+});
+
