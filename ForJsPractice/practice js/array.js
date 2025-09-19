@@ -592,3 +592,93 @@
 // }
 
 // main();
+
+// let number = [1,2,3,4,5,6];
+
+// number.forEach(num => {
+//     console.log(num);
+// });
+
+// let fruits = ["apple", "banana", "mango"];
+
+// fruits.forEach(str => {
+//     console.log(str.toUpperCase());
+// });
+
+// let square = [1,2,3,4,5];
+
+// square.forEach(sqr => {
+//     console.log(sqr*sqr);
+// })
+
+// let name1 = ["harpreet", "baldev"];
+
+// name1.forEach((nm, index) => {
+//     console.log(index + " : " + nm)
+// });
+
+// let numbers = [1,2,3,4,5];
+// let sum = 0;
+
+// numbers.forEach(num => {
+//     sum += num;
+// });
+
+// console.log(sum);
+
+// let number = [1,2,3,4,5];
+// number.forEach(num => {
+//     console.log(num*2);
+// });
+
+// let format = ["js", "html", "css", "react"];
+// let result = [];
+// format.forEach(mat => {
+//     result.push("i am learning " + mat);
+// })
+// console.log(result);
+
+// let product = [5, 10, 15, 20];
+// let result = 1;
+// product.forEach(num => {
+//     result *= num;
+// });
+
+// console.log(result);
+
+// let isOdd = [1,2,3,4,5,6];
+// isOdd.forEach(num => {
+//     if(num % 2 !== 0){
+//         console.log(num);
+//     }
+// });
+
+// let strLength = ["apple", "banana", "orange"];
+// strLength.forEach(strnum => {
+//     console.log(strnum + " : " + strnum.length);
+// });
+
+// let name1 = ["Harpreet", "Aman", "Rohit", "Simran"];
+// name1.forEach((str, index) => {
+//     console.log(index + " : " + str);
+// });
+
+// let numbers = [1,2,3,4,5];
+// numbers.forEach(cube => {
+//     console.log(cube**3);
+// });
+
+// let marks = [95, 67, 88, 76, 59];
+// marks.forEach(num => {
+//     if(num > 70) console.log(num);
+// });
+
+// let prices = [100, 200, 300, 400];
+// prices.forEach(rupay => {
+//     console.log("Rs. " + rupay);
+// });
+
+// let words = ["hello", "world", "javascript", "foreach"];
+// words.forEach(rev => {
+//     console.log(rev.split("").reverse().join(""));
+// });
