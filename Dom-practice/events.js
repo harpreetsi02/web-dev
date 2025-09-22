@@ -177,6 +177,7 @@ document.getElementById("box1").addEventListener("click", function(e){
     e.stopPropagation();
     alert("Box3 clicked - propagation stopped!");
 });
+
 document.body.addEventListener("click", function(){
     alert("Body clicked");
 });
