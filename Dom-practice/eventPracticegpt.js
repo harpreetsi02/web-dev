@@ -184,10 +184,59 @@ const input13 = document.getElementById("input13");
 const btn18 = document.getElementById("btn18");
 const para17 = document.getElementById("para17");
 btn18.addEventListener("click", function(){
-    let fact = input13.value;
-    for(let i = 1; i < fact; i++){
-        fact *= i;
+    let fact = 1;
+    if(input13.value > 0){
+        for(let i = 1; i <= input13.value; i++){
+            fact *= i;
+        }
+        para17.innerText = fact;
     }
-    para17.innerText = fact;
-    fact = "";
+    else{
+        para17.innerText = "Please enter a positive number";
+    }
+    input13.value = "";
+});
+
+
+const para18 = document.getElementById("para18");
+document.getElementById("input14").addEventListener("input", function(){
+    let count = document.getElementById("input14").value;
+    para18.innerText = `Characters: ${count.length}/50`;
+    if(count.length > 50){
+        para18.innerText = "Limit Exceeded!";
+        para18.style.color = "red";
+    }
+    else{
+        para18.style.color = "black";
+    }
+});
+
+const input15 = document.getElementById("input15");
+const btn19 = document.getElementById("btn19");
+btn19.addEventListener("click", function(){
+    if(input15.type === "password"){
+        input15.type = "text";
+        btn19.textContent = "🙈";
+    }
+    else{
+        input15.type = "password";
+        btn19.textContent = "👁️";
+    }
 })
+
+
+const btn20 = document.getElementById("btn20");
+let darkMode = false;
+btn20.addEventListener("click", function () {
+    darkMode = !darkMode; // toggle kar diya
+    if (darkMode) {
+        document.body.style.backgroundColor = "#000";
+        document.body.style.color = "white";
+        btn20.innerText = "Switch to Light Mode";
+    } else {
+        document.body.style.backgroundColor = "#fff";
+        document.body.style.color = "black";
+        btn20.innerText = "Switch to Dark Mode";
+    }
+});
+
